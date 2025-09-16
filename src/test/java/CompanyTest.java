@@ -1,11 +1,11 @@
 import org.example.Company;
 import org.example.Employee;
-import org.example.Healthplan;
 import org.example.enums.Plan;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.example.Healthplan;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
