@@ -1,10 +1,5 @@
 package org.example;
 
-import org.example.Healthplan;
-import org.example.Employee;
-import org.example.Company;
-import org.example.enums.Plan;
-
 public class Main {
     public static void main(String[] args) {
         runDemo();
