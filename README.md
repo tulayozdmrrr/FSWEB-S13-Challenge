@@ -1,1 +1,47 @@
-Java OOP Challenge: Company & Employees Bu proje, Java Nesne Tabanlı Programlama (OOP) kavramlarını öğrenmek ve uygulamak için hazırlanmıştır. Projede sınıflar, nesneler, constructor, getter/setter ve toString() metodları kullanılmıştır. Encapsulation ve enum kullanımı gibi temel OOP prensipleri de örneklenmiştir. Sınıflar ve Özellikleri Healthplan Özellikler: id (int), name (String), plan (enum Plan) Constructor ve getter/setter metodları toString() ile detaylı bilgi alınabilir Employee Özellikler: id, fullName, email, password, Healthplan[] healthPlans addHealthplan() ile plan eklenebilir Constructor, getter/setter ve toString() metodları mevcut Company Özellikler: id, name, giro, String[] developerNames addEmployee() ile çalışan eklenebilir Constructor, getter/setter ve toString() metodları mevcut Plan (enum) Örnek planlar: BASIC, PREMIUM Her planın name ve price değerleri bulunur Kullanım Örneği // Healthplan oluşturma Healthplan hp1 = new Healthplan(1, "Basic Plan", Plan.BASIC); // Employee oluşturma ve healthplan ekleme Employee emp1 = new Employee(1, "John Doe", "john@mail.com", "1234", new Healthplan[2]); emp1.addHealthplan(0, hp1); // Company oluşturma ve employee ekleme Company company = new Company(1, "TechCorp", 5000, new String[2]); company.addEmployee(0, emp1.getFullName()); // Nesneleri yazdırma System.out.println(emp1); System.out.println(company);
+# Java OOP Challenge: Company & Employees
+
+Bu proje, **Java Nesne Tabanlı Programlama (OOP)** kavramlarını öğrenmek ve uygulamak için hazırlanmıştır.  
+Projede **sınıflar, nesneler, constructor, getter/setter ve toString() metodları** kullanılmıştır.  
+**Encapsulation** ve **enum kullanımı** gibi temel OOP prensipleri de örneklenmiştir.
+
+---
+
+## **Sınıflar ve Özellikleri**
+
+### **Healthplan**
+- Özellikler: `id (int)`, `name (String)`, `plan (enum Plan)`  
+- Constructor ve getter/setter metodları  
+- `toString()` ile detaylı bilgi alınabilir  
+
+### **Employee**
+- Özellikler: `id`, `fullName`, `email`, `password`, `Healthplan[] healthPlans`  
+- `addHealthplan()` ile plan eklenebilir  
+- Constructor, getter/setter ve `toString()` metodları mevcut  
+
+### **Company**
+- Özellikler: `id`, `name`, `giro`, `String[] developerNames`  
+- `addEmployee()` ile çalışan eklenebilir  
+- Constructor, getter/setter ve `toString()` metodları mevcut  
+
+### **Plan (enum)**
+- Örnek planlar: `BASIC`, `PREMIUM`  
+- Her planın `name` ve `price` değerleri bulunur  
+
+---
+
+## **Kullanım Örneği**
+```java
+// Healthplan oluşturma
+Healthplan hp1 = new Healthplan(1, "Basic Plan", Plan.BASIC);
+
+// Employee oluşturma ve healthplan ekleme
+Employee emp1 = new Employee(1, "John Doe", "john@mail.com", "1234", new Healthplan[2]);
+emp1.addHealthplan(0, hp1);
+
+// Company oluşturma ve employee ekleme
+Company company = new Company(1, "TechCorp", 5000, new String[2]);
+company.addEmployee(0, emp1.getFullName());
+
+// Nesneleri yazdırma
+System.out.println(emp1);
+System.out.println(company);
